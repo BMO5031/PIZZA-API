@@ -48,6 +48,8 @@ def insert_dummy_data():
     restaurant1 = Restaurants(name="Dominion Pizza", address="Good Italian, Ngong Road, 5th Avenue")
     restaurant2 = Restaurants(name="Pizza Hut", address="Westgate Mall, Mwanzi Road, Nrb 100")
     db.session.add_all([restaurant1, restaurant2])
+    db.session.commit()  # Commit restaurants first to obtain their IDs
+
 
     # Create and insert sample Pizzas
     pizza1 = Pizzas(name="Cheese", ingredients="Dough, Tomato Sauce, Cheese")
@@ -60,7 +62,6 @@ def insert_dummy_data():
     db.session.add_all([restaurant_pizza1, restaurant_pizza2])
 
     db.session.commit()
-
 
 
 with app.app_context():
