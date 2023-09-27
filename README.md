@@ -1,6 +1,8 @@
 # PIZZA-API
 # Week 1 Code Challenge - Pizza Restaurants
 
+# DEPLOYED LINK:https://pizza-restaurants-o7z2.onrender.com
+
 --This Flask-based API project is designed for the Week 1 Code Challenge. The goal of this challenge is to build a fully functional API for a Pizza Restaurant domain. The project provides endpoints to manage restaurants, pizzas, and the associations between them.
 
 # Models
