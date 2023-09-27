@@ -7,7 +7,6 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
 
-
 app = Flask(__name__)
 api = Api(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///sqlite.db'
@@ -69,6 +68,7 @@ with app.app_context():
     db.create_all()
     # Insert dummy data
     insert_dummy_data()
+
 
 
 
