@@ -7,3 +7,4 @@ sqlalchemy-serializer
 sqlalchemy
 flask-migrate
 gunicorn
+flask-restful

@@ -13,6 +13,7 @@ alembic = "*"
 sql = "*"
 alchemy = "*"
 flask-migrate = "*"
+gunicorn = "*"
 
 [dev-packages]
 
