@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.exc import IntegrityError
 from flask_migrate import Migrate
@@ -69,6 +69,12 @@ with app.app_context():
     # Insert dummy data
     insert_dummy_data()
 
+
+
+@app.route('/', methods=['GET'])
+def welcome():
+    welcome_message = "Welcome to My Restaurant! We serve delicious pizzas."
+    return render_template('welcome.html', message=welcome_message)
 
 
 
